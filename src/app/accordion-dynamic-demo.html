@@ -1,0 +1,10 @@
+<div class="card">
+  <button (click)="refreshData()">Update data</button>
+    <p-accordion [activeIndex]="activeIndex" #accordionref>
+        <p-accordionTab [header]="tab.title" *ngFor="let tab of tabs">
+            <p class="m-0">
+                {{ tab.content }}
+            </p>
+        </p-accordionTab>
+    </p-accordion>
+</div>
